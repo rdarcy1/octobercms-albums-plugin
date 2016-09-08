@@ -4,7 +4,15 @@ columns:
         type: text
         searchable: true
         sortable: true
+    is_published:
+        label: 'Is published'
+        type: switch
+        sortable: true
     published_on:
         label: 'Published On'
         type: datetime
         sortable: true
+    cover_image:
+        label: Cover
+        type: partial
+        path: ~/plugins/rdarcy/albums/models/album/partials/_cover_image.htm

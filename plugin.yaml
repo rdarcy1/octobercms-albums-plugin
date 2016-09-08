@@ -9,3 +9,12 @@ navigation:
         label: Albums
         url: rdarcy/albums/albums
         icon: icon-music
+        sideMenu:
+            side-menu-item:
+                label: 'New Album'
+                url: rdarcy/albums/albums/create
+                icon: icon-plus
+            side-menu-item2:
+                label: 'View Albums'
+                url: rdarcy/albums/albums
+                icon: icon-list
