@@ -1,0 +1,6 @@
+plugin:
+    name: 'rdarcy.albums::lang.plugin.name'
+    description: 'rdarcy.albums::lang.plugin.description'
+    author: 'Robin D''Arcy'
+    icon: oc-icon-music
+    homepage: ''
