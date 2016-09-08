@@ -4,3 +4,8 @@ plugin:
     author: 'Robin D''Arcy'
     icon: oc-icon-music
     homepage: ''
+navigation:
+    main-menu-item:
+        label: Albums
+        url: rdarcy/albums/albums
+        icon: icon-music
