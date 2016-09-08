@@ -1,5 +1,5 @@
 1.0.1:
     - 'Initialize plugin.'
 1.0.2:
-    - 'Created table rdarcy_albums_albums'
-    - builder_table_create_rdarcy_albums_albums.php
+    - 'Created table rdarcy_albums_'
+    - builder_table_create_rdarcy_albums_.php

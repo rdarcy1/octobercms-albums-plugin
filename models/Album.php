@@ -13,16 +13,21 @@ class Album extends Model
      * Validation
      */
     public $rules = [
+        'title'         =>  'required',
+        'slug'          =>  ['required', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i', 'unique:rdarcy_albums_'],
+        'published_on'  =>  'required',
+        'cover_image'   =>  'required',
     ];
 
     /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
+     * Relations
      */
-    public $timestamps = false;
+    public $attachOne = [
+        'cover_image' => 'System\Models\File'
+    ];
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rdarcy_albums_albums';
+    public $table = 'rdarcy_albums_';
 }
