@@ -1,0 +1,58 @@
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+    published_on:
+        label: 'Published on'
+        oc.commentPosition: ''
+        mode: datetime
+        span: left
+        required: 1
+        type: datepicker
+    is_published:
+        label: Published
+        span: right
+        required: 1
+        type: checkbox
+    description:
+        label: Description
+        size: huge
+        oc.commentPosition: ''
+        mode: split
+        span: full
+        type: markdown
+    tracklist:
+        label: 'Track list'
+        size: large
+        span: auto
+        type: textarea
+        comment: 'One track per line. Do not include track numbers.'
+    credits:
+        label: Credits
+        size: large
+        oc.commentPosition: above
+        span: auto
+        type: textarea
+    fileupload1:
+        label: 'Cover Image'
+        span: auto
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        required: 1
+        type: fileupload
