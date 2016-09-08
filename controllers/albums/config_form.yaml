@@ -1,11 +1,12 @@
-name: Albums
+name: Album
 modelClass: RDArcy\Albums\Models\Album
 form: $/rdarcy/albums/models/album/fields.yaml
 defaultRedirect: rdarcy/albums/albums
 create:
+    title: 'Create Album'
     redirect: 'rdarcy/albums/albums/update/:id'
     redirectClose: rdarcy/albums/albums
 update:
+    title: 'Update Album'
     redirect: rdarcy/albums/albums
     redirectClose: rdarcy/albums/albums
-preview: {  }

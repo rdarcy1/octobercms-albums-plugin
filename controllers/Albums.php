@@ -16,4 +16,9 @@ class Albums extends Controller
         parent::__construct();
         BackendMenu::setContext('RDArcy.Albums', 'main-menu-item');
     }
+
+    public function update($recordId, $context = null)
+    {
+        return $this->asExtension('FormController')->update($recordId, $context);
+    }
 }

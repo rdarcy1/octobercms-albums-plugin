@@ -19,6 +19,11 @@ class Album extends Model
         'cover_image'   =>  'required',
     ];
 
+    /**
+     * @var string The database table used by the model.
+     */
+    public $table = 'rdarcy_albums_';
+
     /*
      * Relations
      */
@@ -26,8 +31,4 @@ class Album extends Model
         'cover_image' => 'System\Models\File'
     ];
 
-    /**
-     * @var string The database table used by the model.
-     */
-    public $table = 'rdarcy_albums_';
 }
