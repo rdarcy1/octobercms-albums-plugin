@@ -13,10 +13,10 @@ class Album extends Model
      * Validation
      */
     public $rules = [
-        'title'         =>  'required',
-        'slug'          =>  ['required', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i', 'unique:rdarcy_albums_'],
-        'published_on'  =>  'required',
-        'cover_image'   =>  'required',
+//        'title'         =>  'required',
+//        'slug'          =>  ['required', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i', 'unique:rdarcy_albums_'],
+//        'published_on'  =>  'required',
+//        'cover_image'   =>  'required',
     ];
 
     /**
@@ -28,7 +28,10 @@ class Album extends Model
      * Relations
      */
     public $attachOne = [
-        'cover_image' => 'System\Models\File'
+        'cover_image' => 'System\Models\File',
     ];
 
+    protected $jsonable = [
+        'contributors',
+    ];
 }

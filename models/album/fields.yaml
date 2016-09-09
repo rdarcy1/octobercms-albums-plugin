@@ -1,67 +1,82 @@
-fields: {  }
-tabs:
-    fields:
-        title:
-            label: Title
-            oc.commentPosition: ''
-            span: auto
-            required: 1
-            type: text
-            tab: Details
-        slug:
-            label: Slug
-            oc.commentPosition: ''
-            span: auto
-            required: 1
-            preset:
-                field: title
-                type: slug
-            type: text
-            tab: Details
-        description:
-            label: Description
-            size: huge
-            oc.commentPosition: ''
-            span: left
-            type: richeditor
-            tab: Details
-        tracklist:
-            label: 'Track list'
-            size: giant
-            span: auto
-            type: textarea
-            comment: 'One track per line. Do not include track numbers.'
-            tab: Details
-        is_published:
-            label: Published
-            span: left
-            required: 1
-            type: checkbox
-            tab: Manage
-        published_on:
-            label: 'Published on'
-            oc.commentPosition: ''
-            mode: date
-            span: left
-            required: 1
-            type: datepicker
-            tab: Manage
-        credits:
-            label: Credits
-            size: large
-            oc.commentPosition: ''
-            span: auto
-            type: textarea
-            tab: Manage
-        cover_image:
-            label: 'Cover Image'
-            oc.commentPosition: ''
-            mode: image
-            useCaption: true
-            thumbOptions:
-                mode: crop
-                extension: auto
-            span: auto
-            required: 1
-            type: fileupload
-            tab: Manage
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+        tab: Details
+    slug:
+        label: Slug
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        preset:
+            field: title
+            type: slug
+        type: text
+        tab: Details
+    section1:
+        label: Manage
+        span: full
+        type: section
+    is_published:
+        label: Published
+        span: auto
+        required: 1
+        type: checkbox
+        tab: Manage
+    cover_image:
+        label: 'Cover Image'
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: right
+        required: 1
+        type: fileupload
+    published_on:
+        label: 'Published on'
+        oc.commentPosition: ''
+        mode: date
+        span: left
+        required: 1
+        type: datepicker
+    contributors:
+        label: Contributors
+        oc.commentPosition: ''
+        prompt: 'Add new item'
+        span: full
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: Name
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+                role:
+                    label: Role
+                    oc.commentPosition: ''
+                    span: auto
+                    type: text
+    section2:
+        label: Content
+        span: full
+        type: section
+    description:
+        label: Description
+        size: huge
+        oc.commentPosition: ''
+        span: auto
+        type: richeditor
+        tab: Details
+    tracklist:
+        label: 'Track list'
+        size: giant
+        span: auto
+        type: textarea
+        comment: 'One track per line. Do not include track numbers.'
+        tab: Details
