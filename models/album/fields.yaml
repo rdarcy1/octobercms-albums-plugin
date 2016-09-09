@@ -44,6 +44,11 @@ fields:
         span: left
         required: 1
         type: datepicker
+    video_url:
+        label: 'Video URL'
+        oc.commentPosition: ''
+        span: left
+        type: text
     contributors:
         label: Contributors
         oc.commentPosition: ''
