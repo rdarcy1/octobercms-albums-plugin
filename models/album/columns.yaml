@@ -15,4 +15,8 @@ columns:
     cover_image:
         label: Cover
         type: partial
-        path: ~/plugins/rdarcy/albums/models/album/partials/_cover_image.htm
+        path: ~/plugins/rdarcy/albums/models/album/partials/_cover_image.php
+    contributors:
+        label: Contributors
+        type: partial
+        path: ~/plugins/rdarcy/albums/models/album/partials/_contributors.php
