@@ -13,11 +13,10 @@ class BuilderTableCreateRdarcyAlbums extends Migration
             $table->increments('id')->unsigned();
             $table->string('title')->nullable();
             $table->string('slug')->nullable();
-            $table->string('description')->nullable();
-            $table->string('tracklist')->nullable();
-            $table->string('credits')->nullable();
+            $table->text('description')->nullable();
+            $table->text('tracklist')->nullable();
             $table->string('video_url')->nullable();
-            $table->string('contributors')->nullable();
+            $table->text('contributors')->nullable();
             $table->boolean('is_published')->default(0);
             $table->date('published_on')->nullable();
             $table->timestamps();
