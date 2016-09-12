@@ -16,7 +16,9 @@ columns:
         label: Cover
         type: partial
         path: ~/plugins/rdarcy/albums/models/album/partials/_cover_image.php
+        sortable: false
     contributors:
         label: Contributors
         type: partial
         path: ~/plugins/rdarcy/albums/models/album/partials/_contributors.php
+        searchable: true
