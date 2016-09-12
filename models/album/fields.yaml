@@ -49,10 +49,14 @@ fields:
         oc.commentPosition: ''
         span: left
         type: text
+    section3:
+        label: Credits
+        span: full
+        type: section
     contributors:
         label: Contributors
         oc.commentPosition: ''
-        prompt: 'Add new item'
+        prompt: 'Click to add contributor'
         span: full
         type: repeater
         form:
@@ -67,6 +71,12 @@ fields:
                     oc.commentPosition: ''
                     span: auto
                     type: text
+    thanks_message:
+        label: 'Special thanks message'
+        size: tiny
+        oc.commentPosition: ''
+        span: auto
+        type: textarea
     section2:
         label: Content
         span: full
@@ -76,12 +86,10 @@ fields:
         size: huge
         oc.commentPosition: ''
         span: auto
-        type: richeditor
-        tab: Details
+        type: textarea
     tracklist:
         label: 'Track list'
-        size: giant
+        size: huge
         span: auto
         type: textarea
         comment: 'One track per line. Do not include track numbers.'
-        tab: Details

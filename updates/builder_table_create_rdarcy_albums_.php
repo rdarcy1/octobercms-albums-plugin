@@ -17,6 +17,7 @@ class BuilderTableCreateRdarcyAlbums extends Migration
             $table->text('tracklist')->nullable();
             $table->string('video_url')->nullable();
             $table->text('contributors')->nullable();
+            $table->text('thanks_message')->nullable();
             $table->boolean('is_published')->default(0);
             $table->date('published_on')->nullable();
             $table->timestamps();
